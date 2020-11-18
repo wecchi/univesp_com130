@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Marcelo Wecchi">
+		<meta name="description" content="Bacharel em Ciência de Dados. A descrição também é usada nas páginas de resultados do mecanismo de pesquisa.">
+		<meta name="keywords" content="preencha, suas, palavras-chave, aqui">
+		<meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+		<meta property="og:description" content="A Mozilla Developer Network (MDN) fornece
+		informações sobre tecnologias Open Web, incluindo HTML, CSS e APIs para ambos os sites da Web
+		e aplicativos HTML5. Ele também documenta produtos Mozilla, como o sistema operacional Firefox.">
+		<meta property="og:title" content="Mozilla Developer Network">
+		<meta name="twitter:title" content="Mozilla Developer Network">
+		<link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+		<link rel="apple-touch-icon" href="/dist/images/apple-touch-icon-585e5d997d.png">
+		<link rel="stylesheet" href="standard.css">
+		<title>Univesp - Aula de HTML</title>
+		
+	</head>
+	<body style="background-color: rgba(255, 255, 128, .5);">
+		<div id="identificacao" style="background-color: #7B68EE; width: 80%; padding: 40px 10%;">
+			<img src="https://univesp.br/sites/58f6506869226e9479d38201/theme/images/logo-univesp.png"
+				alt="Logo da Univesp" />
+			<cite>
+				<pre> 
+				Castro, M.E.M.B.S. D. Desenvolvimento de Software II. São Paulo: Grupo A, 2014. 9788582601969. 
+				Disponível em: https://integrada.minhabiblioteca.com.br/#/books/9788582601969/. 
+				Acesso em: 02 Nov 2020
+				</pre>
+			</cite>
+			<p><font size="12" color="#FFF8DC">Esta é a minha primeira página</font></p>
+		</div>
+		<h1>h1 - Divide o texto em seções, estabelecendo a ideia de cabeçalhos no documento.</h1>
+		<h2>h2 - Os números podem variar de 1 a 6, sendo que o cabeçalho de nível 1 exibe o texto no seu maior formato</h2>
+		<h3>Este é o de nível 3</h3>
+		<sub>Possibilita o subscrito: um trecho de texto fica abaixo da linha das demais partes do texto.</sub>
+		<h4>Este é o de nível 4</h4>
+		<sup>Permite o sobrescrito: um trecho do texto fica acima da linha das demais partes do texto.</sup>
+		<h5>Este é o de nível 5</h5>
+		<strike>Permite tachar algum trecho: uma linha reta horizontal fica sobreposta ao texto.</strike>
+		<h6>Este é o de nível 6</h6>
+		<footer>Nota de rodapé</footer>
+		<p>
+			<tt> 
+			Mantém o mesmo espaçamento entre todos os caracteres. É utilizada para escrever o texto com 
+			fonte de máquina de escrever, chamada de monoespaçada. Por exemplo, a letra “i” ocupa o mesmo 
+			espaço horizontal que a letra “m”.
+			</tt>
+		</p>
+		<div id="corpo" style="background-color: #87CEFA; width: 80%; padding: 40px 10%;">
+			<aside>
+				<p>Algum conteudo relacionado a um &lt;article&gt;</p>
+			</aside>
+			<p>Modifica o tamanho de um trecho do texto, tornando-o um 
+				<big>pouco maior (big)</big> ou 
+				<small>menor (small)</small>.
+			</p>
+
+			<p>
+				<pre>
+					Faz com que o navegador exiba o texto como ele é digitado, 
+					incluindo novas linhas, tabulações e espaços extras. 
+					Utilizada para texto pré-formatado.
+				</pre>
+			</p>
+			<p><dfn><abbr title="Cascading Style Sheets">CSS</abbr>
+			</dfn> is a language that describes the style of an HTML document.</p>
+			<strong> Dá ênfase a uma palavra ou frase por meio do negrito. </strong><br />
+			<em>Dá ênfase a uma palavra ou frase por meio do itálic </em>
+		</div>
+		
+		<div id="desenho" style="background-color: #FA8072; width: 80%; padding: 40px 10%;">
+			<h3><em>Exemplo de desenho vetorial</em></h3>
+			<svg>
+				<circle cx="45" cy="50" r="40" stroke="#000000" stroke-width="5"
+				fill="#EDEDED" />
+				<rect x="100" y="30" width="150" height="50" stroke="#000000"
+				stroke-width="5" fill="#C0C0C0" />
+			</svg>
+		</div>
+		<blockquote> Permite a inclusão de uma citação longa ou de uma citação a um trecho de texto que tem origem em outro site.</blockquote><br />
+		<q>Atua de forma semelhante à TAG blockquote, porém é aplicada para citações com uma única linha. </q><br />
+		A TAG br é chamada de TAG vazia, pois não possui TAG de fim. 
+		Assim, para usá-la conforme estabelece o padrão da W3C, 
+		você deve colocar a TAG br, acrescida de um espaço e da barra de fim: <br />
+		<ul>
+			<li> Definição de lista não ordenada "li" </li>
+			<li> Item de uma lista não ordena </li>
+			<li> Outro item ... </li>
+		</ul>
+		<p><a href="https://www.ultratools.com/tools/traceRoute">
+		Link externo para IP Traceroute Tool
+		</a></p>
+		<p>
+			<a href = "Video.html" target="new"> Páginas dos vídeos </a>
+		</p>
+		
+		<article>
+			<h1>Como realizar uma análise preditiva</h1>
+			<ol>
+				<li>Definir o problema de negócio</li>
+				<li>Obter dados relativos ao problema</li>
+				<li>Tratar os dados</li>
+				<li>Análise exploratória dos dados</li>
+				<li>Engenharia de atributos</li>
+				<li>Data Manging</li>
+				<li>Divisão entre dados de treino e testes</li>
+				<li>Escolha do modelo (algoritmo)</li>
+				<li>Treinamento do modelo</li>
+				<li>Teste do modelo</li>
+				<li>Avaliação da acurácia</li>
+				<li>Turning do modelo (otimização)</li>
+				<li>Criação de interface com usuário</li>
+				<li>Deploy em produção</li>
+				<li>Criação de dashboards (gramática dos gráficos)</li>
+				<li>Apresentação dos resultados</li>
+			</ol>
+			<footer>
+				<p>© 2020 Wecchi</p>
+			</footer>
+		</article>
+	</body>
+</html>
