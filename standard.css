@@ -1,6 +1,86 @@
 html {
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+	font-family: 'Source Sans Pro', sans-serif, Segoe UI Emoji;
+	background-color: #FFFFF0;
 }
+
+body {
+	width: 95%;
+	margin: 20px auto;
+	background-color: #FFE4B5;
+	padding: 0 20px 20px 20px;
+	border: 4px solid black;
+}
+
+h1{
+	font-size: 32pt;
+	/* topo | direita | inferior | esquerda */
+	margin: 20px auto 20px 0;
+	letter-spacing: 1px;	
+	padding: 10px 0;
+}
+/*h1, h2, h3, h4, h5, h6::first_letter{color: blue;}*/
+
+h2{
+	font-size: 28pt;
+	letter-spacing: 1px;
+	margin: 20px auto 20px 0;
+}
+
+h3{
+	font-size: 24pt;
+	letter-spacing: 1px;
+	margin: 20px auto 20px 0;
+}
+
+h4{
+	font-size: 22pt;
+	letter-spacing: 1px;
+	margin: 20px auto 20px 0;
+}
+
+h5{
+	font-size: 20pt;
+	letter-spacing: 1px;
+	margin: 20px auto 20px 0;
+}
+
+h6{
+	font-size: 18pt;
+	letter-spacing: 1px;
+	margin: 20px auto 20px 0;	
+	padding: 4px 0;
+}
+
+/*mesmo padrão de fontes para parágrafo e listas*/
+p, li, dd {
+	font-size: 14pt;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+dt {
+	font-size: 18pt;
+	letter-spacing: 1px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+article{
+	background-color: #FFDEAD; 
+	width: 80%; 
+	padding: 20px 10%;
+}
+
+/* visual do link não visitado*/
+a:link{color:#FF4500;}
+/* visual do link já visitado*/
+a:visited{color:#808000;}
+/* visual do link ao passar o mouse*/
+a:hover{color:#FF6347}
+/* visual do link quando link é clicado*/
+a:active{color:#1E90FF}
 
 table {
   border-collapse: collapse;
@@ -16,10 +96,12 @@ td, th {
 
 th {
   background-color: rgb(235,235,235);
+  text-align: center;
+  text-transform: uppercase
 }
 
 td {
-  text-align: center;
+  text-align: left;
 }
 
 tr:nth-child(even) td {
@@ -39,11 +121,15 @@ abbr {
 }
 
 header {
-	background-color:#EDEDED; 
+	background-color: #FFE4C4; 
 	padding: 30px 10px;
 	font-size: 40px;
 	font-weight: bold;;
 	text-align: center;
+}
+
+aside{
+	color: #4F4F4F;
 }
 
 code {
@@ -51,13 +137,13 @@ code {
     font-size: 90%;
     color: #c7254e;
     background-color: #f9f2f4;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #menu ul {
     padding: 0px;
     margin: 0px;
-    background-color: #EDEDED;
+    background-color: #FFE4C4;
     list-style:none;
 	font-size: 20px;
 	
@@ -69,14 +155,25 @@ code {
     display: inline-block;
 
     /* visual do link */
-    background-color: #EDEDED;
+    background-color: #FFE4C4;
     color: #333;
     text-decoration: none;
-    border-bottom: 3px solid #EDEDED;
+    border-bottom: 3px solid #FFE4C4;
 }
 
 #menu ul li a:hover {
-    background-color: #D6D6D6;
+    background-color: #FFA500;
     color: #6D6D6D;
+	text-shadow: 1px 1px 1px black;
     border-bottom: 3px solid #EA0000;
+}
+
+#imgpos {
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-110px;
+	margin-top:-40px;
+	width:220px;
+	height:80px;
 }

@@ -10,10 +10,10 @@
 		<link rel="index" title="Início" href="http://flatschart.com"/>
 		<link rel="help" title="Ajuda do site" href="http://flatschart.com" />
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="standard.css">
+		<link rel="stylesheet" type="text/css" href="standard.css">
 	</head>
 		
-	<body style="background-color:#FFFFF0;">
+	<body>
 		<header>ESTRUTURA DE UMA PÁGINA HTML
 		<br /><small><i>(também chamado de documento web)</i></small></header>
 		<nav id="menu">
@@ -31,19 +31,24 @@
 			document.write("<u>***** Exempo de um texto gerado em Javascript chamando a função document.write() ********</u>");
 		</script>
 		<hgroup>
-			<h1>&lt;hgroup&gt; Agrupa uma sequência de títulos:</h1>
+			<p><code>&lt;hgroup&gt;</code> Agrupa uma sequência de títulos, <u>exemplos</u>:</p>
+			<h1><code>&lt;h1&gt;</code> Título 1: Univesp</h1>
 			<p><strong>Observação:</strong> use apenas um&lt;h1&gt;por página - isso deve representar o 
 			título ou assunto principal de <b>toda</b> a página. Além disso, não pule os níveis 
 			de título - comece com&lt;h1&gt;, depois use&lt;h2&gt;e assim por diante.</p>
-			<h2>&lt;h2&gt; Título 2</h2>
-			<h3>&lt;h3&gt; Título 3</h3>
-			<h4>&lt;h4&gt; Título 4</h4>
-			<h5>&lt;h5&gt; Título 5</h5>
-			<h6>&lt;h6&gt; Título 6</h6>
+			<h2><code>&lt;h2&gt;</code> Título 2: Bacharel em Ciência de Dados</h2>
+			<h3><code>&lt;h3&gt;</code> Título 3: Disciplina COM130 - Fundamentos de Internet e Web</h3>
+			<h4><code>&lt;h4&gt;</code> Título 4: HTTP - Camada de aplicação</h4>
+			<h5><code>&lt;h5&gt;</code> Título 5: HTML - Linguagem de marcação</h5>
+			<h6><code>&lt;h6&gt;</code> Título 6: CSS - Cascading Style Sheets (folha de estilo em cascata)</h6>
+			<ul>
+				<li><a href="https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/CSS_basico">Introdução ao CSS</a></li>
+				<li><a href="https://www.w3schools.com/css/css_howto.asp">Como adicionar CSS a um HTML</a></li>			
+				<li><a href="https://developer.mozilla.org/pt-BR/docs/Aprender/CSS/Construindo_blocos">Construindo blocos CSS</a></li>				
+			</ul>
 		</hgroup>
-		<hr>
 		<section>
-			<article id="identificacao" style="background-color: #FFDEAD; width: 80%; padding: 20px 10%;">
+			<article id="identificacao">
 				<h2 id="estrutura"><u>Estrutura básica  de um HTML 5</u></h2>
 				<dl>
 				<dt><b>&lt;header&gt;</b><var>texto</var><b>&lt;/header&gt;</b></dt>
@@ -150,7 +155,7 @@
 						<li>Os atributos são especificados na tag <abbr title="é a TAG de abertura, antes da barra /, exemplo <a href = ...>">inicial</abbr></li>
 						<li>Os atributos geralmente vêm em pares nome / valor como: <samp><b>atributo</b> = "valor"</samp></li>
 					</ol>
-					<h4>Atributos para o elemento <code>&lt;img&gt;</code>, que é a tag usada para embutir uma imagem em uma página HTML:</h4>
+					<h6>Atributos para o elemento <code>&lt;img&gt;</code>, que é a tag usada para embutir uma imagem em uma página HTML:</h6>
 					<ul>
 						<li><code>src</code>: especifica o nome do arquivo (imagem) e respectivo caminho que pode ser
 						uma URL <abbr title="quando a imagem está hospedada em outro site, como .... https://www.sitexpto/images/img_5888.jpg.">absoluta</abbr>
@@ -161,7 +166,7 @@
 						<li><code>alt</code>: define um texto alternativo para a imagem quando por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta, um erro no src atributo ou se o usuário usa um leitor de tela.
 						(exemplo: <samp>alt="Grafo de conveniência para o departamento de TI"</samp>)</li>
 					</ul>
-					<h4>Atributos para diversos elementos:</h4>
+					<h6>Atributos para diversos elementos:</h6>
 					<ul>
 						<li><code>style</code>: é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais
 						(exemplo: <samp>style = "color:blue;"</samp>)</li>
@@ -173,10 +178,12 @@
 					</dd>
 				</dl>
 			</article>
+			<aside>
+			<ins>Nota:</ins>São muitas as possibilidades de utilização dos elementos HTML e a combinação entre 
+			eles. Aqui foram elencados algumas das tags indicadas no material de apoio da disciplina <b><samp>COM130</samp></b>, 
+			que requer um estudo muito mais profundo para uma utilização profissional e <em> não acadêmica</em>.
+			</aside>
 		</section>
-		<aside>
-		
-		</aside>
 		<footer id="about" style="height: 65px; text-align: right">
 			<p>© 2020 Wecchi</p>
 			<address>
