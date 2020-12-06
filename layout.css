@@ -1,0 +1,111 @@
+* {
+     margin: 0px;
+     padding: 0px 
+}
+ #main-container {
+     width: 100%;
+     margin: 0px auto;
+     font-family: arial;
+}
+ #header {
+     width: 100%;
+     background-color:#274C77;
+     padding: 10px;
+     color: white;
+}
+ #header:after {
+     content: ".";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+}
+ #header section {
+     float: left;
+     width: 20%;
+     font-size: 18px;
+     font-weight: bold;
+}
+ #header nav{
+     width: 80%;
+     float: left;
+}
+ #header nav ul{
+     list-style: none;
+}
+
+ #header nav ul li{
+     float: left;
+     min-width: 8%;
+     padding: 4px;
+     margin-left: 10px;
+     background-color: #fdf1e5;
+     text-align: center;
+     color: black;
+}
+ #header nav ul li a{
+     text-decoration: none;
+}
+ #header a:hover{
+     background-color:#E7F59E;
+}
+ #main-body-container {
+     padding: 10px;
+     margin: 10px;
+  }
+ #main-body-container:after {
+     content: ".";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+}
+ #display-ads{
+     padding: 20px;
+     margin: 20px;
+     background:green;
+     color: white;
+}
+ #display-ads div{
+  width: 250px;
+  height: 30px;
+  text-align:center
+  background-color:green;
+  position: relative;
+  animation-name: example;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:#392759; left:0%; top:0px;}
+  12%  {background-color:#FF579F; left:20%; top:0px;}
+  24%  {background-color:#3DA5D9; left:40%; top:0px;}
+  36%  {background-color:#744FC6; left:60%; top:0px;}
+  48%  {background-color:#EF8A17; left:80%; top:0px;}
+  60%  {background-color:#744FC6; left:60%; top:0px;}
+  72%  {background-color:#3DA5D9; left:40%; top:0px;}
+  84%  {background-color:#FF579F; left:20%; top:0px;}
+  100% {background-color:#392759; left:0%; top:0px;}
+}
+}
+ #main-article {
+     float: left;
+     width: 60%;
+     min-height: 450px;
+     background: #e5e5e5;
+     font-style: italic;
+}
+ #sidebar {
+     float: right;
+     width: 38%;
+     min-height: 450px;
+     background: #e5e5e5;
+     font-style: oblique;
+}
+ #footer {
+     width: 100%;
+     background-color: red;
+     padding: 10px;
+     color: white;
+}
