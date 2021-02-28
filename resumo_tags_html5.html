@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+	<head>
+		<title>Elementos HTML</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Marcelo Wecchi">
+		<meta name="description" content="Elementos do HTML 5">
+		<meta name="keywords" content="html, html5, elementos, página web">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<link rel="index" title="Início" href="http://flatschart.com"/>
+		<link rel="help" title="Ajuda do site" href="http://flatschart.com" />
+		<link rel="icon" href="favicon.svg" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="standard.css"/>
+	</head>
+		
+	<body>
+		<header>ESTRUTURA DE UMA PÁGINA HTML
+		<br /><small><i>(também chamado de documento web)</i></small></header>
+		<nav id="menu">
+			<ul>
+				<li><a title="Início" href="#">Principal</a></li>
+				<li><a title="Apresenta como uma página HTML deve ser formatada" href="#estrutura">Estrutura básica</a></li>
+				<li><a title="Elementos para formatação de texto" href="#formatatexto">Formatação de textos</a></li>			
+				<li><a title="Atributos usados nos elementos / TAGs" href="#atributos">Atributos HTML</a></li>
+				<li><a title="Exemplo de tabela" href="tables.html">Tabela</a></li>
+				<li><a title="Sobre o desenvolvedor desta página" href="#about">Sobre</a></li>			
+			</ul>
+		</nav>
+		<hr>
+		<script type="text/javascript">
+			document.write("<u>***** Exempo de um texto gerado em Javascript chamando a função document.write() ********</u>");
+		</script>
+		<hgroup>
+			<p><code>&lt;hgroup&gt;</code> Agrupa uma sequência de títulos, <u>exemplos</u>:</p>
+			<h1><code>&lt;h1&gt;</code> Título 1: Univesp</h1>
+			<p><strong>Observação:</strong> use apenas um&lt;h1&gt;por página - isso deve representar o 
+			título ou assunto principal de <b>toda</b> a página. Além disso, não pule os níveis 
+			de título - comece com&lt;h1&gt;, depois use&lt;h2&gt;e assim por diante.</p>
+			<h2><code>&lt;h2&gt;</code> Título 2: Bacharel em Ciência de Dados</h2>
+			<h3><code>&lt;h3&gt;</code> Título 3: Disciplina COM130 - Fundamentos de Internet e Web</h3>
+			<h4><code>&lt;h4&gt;</code> Título 4: HTTP - Camada de aplicação</h4>
+			<h5><code>&lt;h5&gt;</code> Título 5: HTML - Linguagem de marcação</h5>
+			<h6><code>&lt;h6&gt;</code> Título 6: CSS - Cascading Style Sheets (folha de estilo em cascata)</h6>
+			<ul>
+				<li><a href="https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/CSS_basico">Introdução ao CSS</a></li>
+				<li><a href="https://www.w3schools.com/css/css_howto.asp">Como adicionar CSS a um HTML</a></li>			
+				<li><a href="https://developer.mozilla.org/pt-BR/docs/Aprender/CSS/Construindo_blocos">Construindo blocos CSS</a></li>				
+			</ul>
+		</hgroup>
+		<section>
+			<article id="identificacao">
+				<h2 id="estrutura"><u>Estrutura básica  de um HTML 5</u></h2>
+				<dl>
+				<dt><b>&lt;header&gt;</b><var>texto</var><b>&lt;/header&gt;</b></dt>
+					<dd>
+						Cabeçalho. Indica a introdução de um tema abordado na página. Quanto mais no começo do
+						código está, mais relevante para os mecanismos de busca.
+					</dd><br />
+				<dt><b>&lt;nav&gt;</b><var>texto</var><b>&lt;/nav&gt;</b></dt>
+					<dd>
+						Agrupa uma série de links, desde que sejam blocos de navegação principal (nav primaria,
+						secundária e <em>in page</em>).
+					</dd><br />	
+				<dt><b>&lt;section&gt;</b><var>texto</var><b>&lt;/section&gt;</b></dt>
+					<dd>
+						Define uma seção dentro de um determinado elemento. Pode conter um
+						header, um footer, e uma nova ordem de títulos, se necessário.<br />
+						Pode ser utilizada na tag article para separar notícias, eventos, galeria de fotos, etc
+					</dd><br />
+				<dt><b>&lt;article&gt;</b><var>texto</var><b>&lt;/article&gt;</b></dt>
+					<dd>
+						Trata-se de uma área que define o conteúdo principal da página, podendo ser uma composição
+						de formulários, um artigo de notícias, etc. Desde que seja um conteúdo independente
+					</dd><br />
+				</dl>
+				<dt><b>&lt;aside&gt;</b><var>texto</var><b>&lt;/aside&gt;</b></dt>
+					<dd>
+						Faz referência ao conteúdo principal que o envolve (como se fosse separado do conteúdo principal)<br />
+						quando está dentro de um &lt;article&gt;, faz referência ao assunto geral dele, se estiver fora, está
+						relacionado com o conteúdo glogal do site. Pode ou não estar num <em>sidebar</em>
+					</dd><br />
+				<dt><b>&lt;footer&gt;</b><var>texto</var><b>&lt;/footer&gt;</b></dt>
+					<dd>
+						Rodapé em um documento. <br />
+						Pode ser utilizado dentro da tag <em>section</em> em um documento. Normalmente um
+						<var>&lt;footer&gt;</var> contém as seguintes informações:<br />
+						<ul>
+							<li>informações de autoria;</li>
+							<li>informações sobre direitos autoriais</li>
+							<li>informações de contato</li>
+							<li>mapa do site</li>
+							<li>voltar aos links principais</li>
+							<li>documentos relacionados</li>
+						</ul>
+						<small><sup>*</sup> informações de contato dentro de um elemento <code>&lt;footer&gt;</code> 
+						devem estar dentro de uma tag <code>&lt;address&gt;</code>.</small><br />
+					</dd><br />
+				<dt><b>&lt;address&gt;</b><var>texto</var><b>&lt;/address&gt;</b></dt>
+					<dd>
+						Define as informações de contato do autor / proprietário de um documento ou artigo.<br />
+						As informações de contato podem ser um endereço de e-mail, URL, endereço físico, número de telefone, identificador de mídia social, etc.
+						O texto no&lt;address&gt;elemento geralmente é renderizado em itálico e os navegadores sempre 
+						adicionam uma quebra de linha antes e depois do elemento &lt;address&gt;.
+					</dd>
+				<h2 id="formatatexto"><u>Formatação de texto:</u></h2>
+				<dt><strong>Destaque dentro de um texto</strong></dt>
+					<dd>
+						Esse grupo de tags possibilita alterar sensivelmente a exibição de um texto. Ao
+						renderizar o código html os navegadores apresentam o conteúdo de uma maneira mais <em>amigável</em>:
+					<ul>
+						<li><b>&lt;b&gt;</b><var>texto</var><b>&lt;/b&gt;</b> aplica negrito: <b>exemplo de um texto html 5</b></li>
+						<li><b>&lt;u&gt;</b><var>texto</var><b>&lt;/u&gt;</b> aplica sublinhado: <u>exemplo de um texto html 5</u></li>
+						<li><b>&lt;i&gt;</b><var>texto</var><b>&lt;/i&gt;</b> aplica itálico: <i>exemplo de um texto html 5</i></li>
+						<li><b>&lt;s&gt;</b><var>texto</var><b>&lt;/s&gt;</b> identifica um conteúdo de informação não mais relevante ou obsoleto: <s>exemplo de um texto html 5</s></li>
+						<li><b>&lt;sub&gt;</b><var>texto</var><b>&lt;/sub&gt;</b> aplica subscrito: <sub>exemplo de um texto html 5</sub></li>
+						<li><b>&lt;sup&gt;</b><var>texto</var><b>&lt;/sup&gt;</b> aplica superscrito: <sup>exemplo de um texto html 5</sup></li>
+						<li><b>&lt;em&gt;</b><var>texto</var><b>&lt;/em&gt;</b> aplica ênfase no estilo itálico: <em>exemplo de um texto html 5</em></li>
+						<li><b>&lt;strong&gt;</b><var>texto</var><b>&lt;/strong&gt;</b> aplica ênfase no estilo negrito: <strong>exemplo de um texto html 5</strong></li>
+						<li><b>&lt;strike&gt;</b><var>texto</var><b>&lt;/strike&gt;</b> aplica estilo riscado (texto não válido): <strike>exemplo de um texto html 5</strike></li>
+						<li><b>&lt;tt&gt;</b><var>texto</var><b>&lt;/tt&gt;</b> mantém o mesmo espaçamento entre todos os caracteres: <tt>exemplo de um texto html 5</tt></li>
+						<li><b>&lt;small&gt;</b><var>texto</var><b>&lt;/small&gt;</b> marcar um trecho de texto conhecido como “letras miúdas”, por exemplo, em avisos legais ou advertências sobre o uso de um determinado produto ou serviço: <small>exemplo de um texto html 5</small></li>
+						<li><b>&lt;big&gt;</b><var>texto</var><b>&lt;/big&gt;</b> altera o tamanho da fonte para maior: <big>exemplo de um texto html 5</big></li>
+						<li><b>&lt;mark&gt;</b><var>texto</var><b>&lt;/mark&gt;</b> representa um realce no texto, normalmente com a função de destacar o conteúdo ou para referenciar outro conteúdo <mark>exemplo de um texto html 5</mark></li>
+						<li><b>&lt;ins&gt;</b><var>texto</var><b>&lt;/ins&gt;</b> identifica uma inserção, por exemplo, um conteúdo adicionado em uma posterior revisão do documento <ins>exemplo de um texto html 5</ins></li>
+						<li><b>&lt;del&gt;</b><var>texto</var><b>&lt;/del&gt;</b> identifica um trecho que foi removido do conteúdo, por exemplo, em uma lista de compras os itens que já foram adquiridos <del>exemplo de um texto html 5</del></li>
+						<li><b>&lt;code&gt;</b><var>texto</var><b>&lt;/code&gt;</b> indica um fragmento de código, um trecho de uma linguagem de programação: <code>exemplo de um texto html 5</code></li>
+						<li><b>&lt;var&gt;</b><var>texto</var><b>&lt;/var&gt;</b> indica uma variável de uma expressão matemática ou de uma linguagem de programação ou ainda um placeholder (espaço reservado) para o leitor incluir mentalmente um conteúdo: <var>exemplo de um texto html 5</var></li>
+						<li><b>&lt;samp&gt;</b><var>texto</var><b>&lt;/samp&gt;</b> indica o conteúdo de saída de um script ou de um trecho de linguagem de programação: <samp>exemplo de um texto html 5</samp></li>
+						<li><b>&lt;kbd&gt;</b><var>texto</var><b>&lt;/kbd&gt;</b> indica uma entrada de texto (digitação) via teclado ou a entrada de um comando de voz: <kbd>exemplo de um texto html 5</kbd></li>
+						<li><b>&lt;cite&gt;</b><var>texto</var><b>&lt;/cite&gt;</b> marca a citação do título de uma obra (livro, revista, música, poema, roteiro, filme, escultura, etc.): <cite>https://plataforma.bvirtual.com.br/Leitor/Publicacao/160673/epub/0</cite></li>
+					</ul>
+					</dd>
+				<dt><strong>Grupos de texto</strong></dt>
+					<dd>
+						Esse grupo de tags possibilita agrupar conteúdo sob dadas <em>características</em>:
+					<ul>
+						<li><b>&lt;blockquote&gt;</b><var>texto</var><b>&lt;/blockquote&gt;</b>
+						Permite a inclusão de uma citação longa ou de uma citação a um trecho de texto que tem 
+						origem em outro site, note que o texto fica "apartado" do conteúdo principal: 
+						<blockquote>exemplo de um texto html 5</blockquote></li>
+						<li><b>&lt;q&gt;</b><var>texto</var><b>&lt;/q&gt;</b> 
+						Indica um conteúdo citado em outra fonte. Pode ser uma citação no sentido usual da palavra (quote)
+						, neste caso coloca o texto entre aspas: <q>exemplo de um texto html 5</q></li>
+						<li><var>texto</var><b>&lt;br /&gt;</b> 
+						A TAG br é chamada de <em>TAG vazia</em>, pois não possui TAG de fim.
+						Assim, ao usá-la conforme estabelece o padrão da W3C, você deve colocar a TAG br, 
+						acrescida de um espaço e da barra de fim: <br />
+					</ul>
+					</dd>
+				<dt id="atributos"><strong>Atributos HTML</strong></dt>
+					<dd>
+					Os atributos HTML fornecem informações adicionais sobre os elementos HTML (tags)
+					<ol>
+						<li>Todos os elementos HTML podem ter <strong>atributos</strong></li>
+						<li>Os atributos são especificados na tag <abbr title="é a TAG de abertura, antes da barra /, exemplo <a href = ...>">inicial</abbr></li>
+						<li>Os atributos geralmente vêm em pares nome / valor como: <samp><b>atributo</b> = "valor"</samp></li>
+					</ol>
+					<h6>Atributos para o elemento <code>&lt;img&gt;</code>, que é a tag usada para embutir uma imagem em uma página HTML:</h6>
+					<ul>
+						<li><code>src</code>: especifica o nome do arquivo (imagem) e respectivo caminho que pode ser
+						uma URL <abbr title="quando a imagem está hospedada em outro site, como .... https://www.sitexpto/images/img_5888.jpg.">absoluta</abbr>
+						ou <abbr title="quando a imagem está hospedada no próprio domínio. Se a URL começar sem barra, ele será relativa ao local onde está a página atual">relativa</abbr>.
+						(exemplo: <samp>src = "logo.png"</samp>)</li>
+						<li><code>width</code> e <code>height</code>: especifica a largura e a altura da imagem (em pixels).
+						(exemplo: <samp>width="500" height="600"</samp>)</li>
+						<li><code>alt</code>: define um texto alternativo para a imagem quando por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta, um erro no src atributo ou se o usuário usa um leitor de tela.
+						(exemplo: <samp>alt="Grafo de conveniência para o departamento de TI"</samp>)</li>
+					</ul>
+					<h6>Atributos para diversos elementos:</h6>
+					<ul>
+						<li><code>style</code>: é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais
+						(exemplo: <samp>style = "color:blue;"</samp>)</li>
+						<li><code>title</code>: especifica um texto, estilo <em>tooltip</em> que aparece quando o usuário passa o mouse sobre o elemento.
+						(exemplo: <samp>title="uma árvore não pode possuir caminho cíclico"</samp>)</li>
+						<li><code>id</code>: define um marcador dentro da página HTML. Os marcadores podem ser úteis se uma página da web for muito longa: funciona como ponteiros internos chamados por <code>&lt;a href = "#marcador"&gt;</code> para facilitar a navegação da página.
+						(exemplo: <samp>id="w56QQ"</samp>)</li>					
+					</ul>				
+					</dd>
+				</dl>
+			</article>
+			<aside>
+			<ins>Nota:</ins>São muitas as possibilidades de utilização dos elementos HTML e a combinação entre 
+			eles. Aqui foram elencados algumas das tags indicadas no material de apoio da disciplina <b><samp>COM130</samp></b>, 
+			que requer um estudo muito mais profundo para uma utilização profissional e <em> não acadêmica</em>.
+			</aside>
+		</section>
+		<footer id="about" style="height: 65px; text-align: right">
+			<p>© 2020 Wecchi</p>
+			<address>
+				contato: <a href="mailto:wecchi@gmail.com">Marcelo</a>
+				, web site: <a href="http://www.wdatascience.com.br">wdatascience</a>
+			</address>
+			</footer>
+	</body>
+</html>
