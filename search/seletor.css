@@ -1,0 +1,32 @@
+/*Seletor universal, vale para todos os elementos*/
+*{
+	margin:1em;	
+	padding:0;
+	color:#191970;
+	font-family:arial
+}
+
+/*Seletor de elemento*/
+h1{color:blue; font-size:50px;}
+p {color:green; font-size:12px;}
+
+/*Seletor atributo*/
+input[type="text"]{
+	width:200px; 
+	background-color:#CCC;
+	height:35px;
+	border:none
+}
+input[type="email"]{
+	width:200px; 
+	height:35px;
+	border:1
+}
+input[type="submit"]{
+	width:200px; 
+	background-color:#4169E1;
+	height:35px;
+	border:none;
+	cursor:pointer;
+	color:#FFF;
+}
