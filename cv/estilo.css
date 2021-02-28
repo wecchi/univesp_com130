@@ -1,0 +1,180 @@
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	font: 14px
+	color: #000000;
+}
+
+h1,h2 {
+	font-family: Arial;
+}
+
+h1 {
+	border-bottom: 3px solid #aaa;
+	background-color:#3b3b3b;
+	color: #ddd;
+	padding: 5px;	
+	text-align: center;
+}
+
+h2 {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-color: #000000;
+	color: #ffffff;
+	padding-left: 5px;
+	margin: 0 0 0 -15px;
+	font-weight: normal;
+}
+
+section{
+	background-color: #fff;
+	padding-left:15px;
+	border: #ccc 1px dotted;
+	margin-top: 1em;
+}
+
+.secao {
+	background-color: #fff;
+	padding-left: 15px;
+	border: #ccc 1px dotted;
+	margin-top: 1em;
+}
+
+a {
+	text-decoration:none;
+	color: #f33;
+}
+
+a:visited {
+	text-decoration:none;
+	color: #700;
+}
+
+a:hover {
+	text-decoration:none;
+	color: #fa0;
+}
+
+#menu {
+	margin: 0;
+	text-align: center;
+}
+
+#menu ul, #menu li {
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu .ativo {
+	background-color: #ddd;
+}
+
+.url, .email {
+	display: block;
+}
+
+.email:after {
+	content: url('img/mail.png');
+	margin-left:0.3em;
+}
+
+.url:after {
+	content: url('img/url.png');
+	margin-left:0.3em;
+}
+
+table {
+	margin-top:10px;
+	border-collapse: collapse;
+}
+
+th {
+	height:30px;
+	background-color:#4682B4;
+	color:#E0FFFF;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+td {
+	padding-left:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-decoration:None;
+	text-align:left;
+}
+
+
+tr.par {
+	background-color:#ADD8E6;
+}
+
+tr.impar {
+	background-color:#E0FFFF;
+}
+
+td.ruim {color: #a99;}
+td.regular {color: #a77;}
+td.bom {color: #a55;}
+td.otimo {color: #a33;}
+
+.foto {
+	float: right;
+	margin-right: 5em;
+	border: #fff 1em solid;
+	
+	-webkit-box-shadow: 0px 0px 5px 5px #191b30;
+	-moz-box-shadow: 0px 0px 5px 5px #191b30;
+	box-shadow: 0px 0px 5px 5px #191b30;
+}
+
+footer {
+	border-top: 3px solid #aaa;
+	padding: 5px;
+	color: #ddd;
+	background-color: #3b3b3b;
+	font: 100% "Arial", Verdana, sans-serif;
+	text-align:center
+}
+
+
+fieldset {
+	border: #ccc 1px dotted;
+	margin-top: 1em;
+}
+
+legend.alinhamento {
+	text-align: center;
+	font-weight: bold;
+}
+
+
+label {
+	font-weight: bold;
+	margin-right: 10px;
+	width: 15em;
+}
+
+label:after {
+	content:":";
+}
+
+form label {
+	display: block;
+}
+
+input, textarea {
+	border: #669 2px solid;
+	display: block;
+	width: 139em;
+}
+
+input[type=submit] {
+	border: #bbb 1px solid;
+	margin-top: 0.5em;
+}
