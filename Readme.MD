@@ -7,7 +7,8 @@ Apresentar noções sobre a estrutura de documentos na Web:
 - Tags HTML básicas (H1, P etc.) e extensíveis (div, span etc.);
 - Atributos básicos de CSS (color, text-align etc.), seletores CSS; 
 - Javascript;
-- Formulários HTML; Noções de manipulação programática do DOM. 
+- Formulários HTML; 
+- Noções de manipulação programática do DOM. 
 
 ## Exercícios práticos:
 
@@ -22,8 +23,8 @@ Relacionei os exercícios realizados no 4º bimestre/2020 durante as aulas da di
 7. [Resumo das TAGs HTML5](resumo_tags_html5.html): descrever resumidamente todas as tags html5 estudadas no curso.
 8. [Java script](search/): criação de script para localização de conteúdo.
 
-## Modelo estrutural das camadas da Internet (protocolos TCP/IP)
+## Modelo estrutural das camadas da Internet (protocolos)
 
 <div align="center">
-  <img width="90%" src="camadas-osi.jpg" alt='modelo OSI'>
+  <img width="70%" src="camadas-osi.jpg" alt='modelo OSI'>
 </div>
