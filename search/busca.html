@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<hmtl lang="pt_BR">
+	<head>
+		<title>Busca</title>
+		<script src="scripts.js"></script>
+	</head>
+	<body>
+		<h1>Funções javascrip</h1>	
+		<form name="formBusca" action="busca.php" onsubmit="return valida()" method="post" required>
+			Procurar: <input type="text" name="busca" maxlength="20" ><br />
+			<input type="submit" value="Submit">
+		</form>
+		<br />
+		<form name="formData" method="post" onsubmit="return validaData()" required>
+			Data (DD/MM/YYYY): <input type="text" name="data" maxlength="10"><br />
+			<input type="submit" value="Submit">
+		</form>	
+	</body>
+</html>
