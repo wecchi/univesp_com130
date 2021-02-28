@@ -1,0 +1,152 @@
+*{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+
+a{
+	font-family:arial;
+	font-size:14px;
+}
+
+/*Contêiner header*/
+div#header, div#footer{
+	margin:0 auto;
+	width:1000px;
+	height:70px;
+	border:solid #c0c0c0 1px;
+}
+
+div#header{
+	background:#fff
+	URL(banner.jpg)
+}
+
+div#header ul{
+	text-align:right;
+	list-style-type:none;
+	padding-top:40px;
+}
+
+div#header ul li{
+	display:inline;
+	margin-right:20px;
+}
+
+div#header ul li a{
+	text-decoration:none;
+}
+
+div#header ul li a:hover{
+	color:#000;
+	text-decoration:underline;
+}
+
+/*Contêiner do centro*/
+div#centro{
+	width:1000px;
+	height:800px;
+	margin:0 auto;
+	border-left:solid #c0c0c0 1px;
+	border-right:solid #c0c0c0 1px;	
+}
+
+/*Contêiner menu*/
+div#menu{
+	height:800px;
+	width:200px;
+	background-color:#fff;
+	float:left;
+}
+
+div#menu div.nav{
+	padding-bottom:15px;
+}
+
+div#menu h4{
+	width:100%;
+	background-color:darkgrey;
+	color:#fff;
+	padding-top:20px:
+	padding-bottom:5px;
+}
+
+div#menu div.nav ul{
+	padding-left:10px;
+	padding-top:7px:
+}
+
+div#menu div.nav ul li{
+	padding-left:10px;
+	text-align:left;
+	line-height1.5;
+	list-style-type:none;	
+}
+
+/*Contêiner artigos*/
+div#article{
+	height:800px;
+	width:640px;
+	background-color:#fff;
+	float:left;
+	border-left:solid; #c0c0c0 1px;
+	border-right:solid; #c0c0c0 1px;
+}
+
+div#article h2 a p{
+	font-family:tahoma;
+	text-align:left;
+}
+
+div#article h2{
+	color:#0000ff;
+	font-size:30px;
+	padding-left:15px
+}
+
+div#article a{
+	color:#000;
+	text-decoration:none;
+}
+
+div#article a:hover{
+	color:#c0c0c0;
+	text-decoration:underline;
+}
+
+div#article a p{
+	font-size:15px;
+	padding-left:25px;
+	padding-right:20px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+div#article a p img{
+	width:170px;
+	float:left;
+	margin-right:15px;
+	margin-bottom:5px;
+}
+
+/*Contêiner parceiros*/
+div#parceiros{
+	height:800px;
+	width:150px;
+	background-color:#fff;
+	float:left;
+}
+
+
+div#parceiros img{
+	width:150px;
+}
+
+/*Contêiner footer*/
+div#footer{
+	clear:both
+}
+
+div#footer address{
+	padding-top:15px
+}
