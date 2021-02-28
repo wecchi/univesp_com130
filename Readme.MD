@@ -17,6 +17,13 @@ Relacionei os exercícios realizados no 4º bimestre/2020 durante as aulas da di
 2. [Marcadores HTML](Sem4_aula1.html): Criar uma página com as tags h1 .. h6, p, aside, dfn, svg, blockquote, listas, article, a, footer;
 3. [Converter divs em HTML5](div_TO_html5/): dada uma página formatada com _div_ use as tags HTML5 que correspondam a estrutura CSS adequada;
 4. [Site de eletrônicos](tv/): criar uma estrutura HTML5 com CSS que contemple 2 páginas de navegação para apresentação de equipamento eletrônico;
-5. [Layout com CSS - comercial](layout.html): estrtura de uma página web com _section_ contendo links externos na forma de menu _nav_, espaço para _ads_, _article_, _aside_ e _footer_.
-6. [Layout com CSS - currículo](cv/): estrtura de uma página web com _section_ contendo tabelas para apresentação curricular de um aluno e formulário para contato.
+5. [Layout com CSS - comercial](layout.html): estrtura de uma página web com _section_ contendo links externos na forma de menu _nav_, espaço para _ads_, _article_, _aside_ e _footer_;
+6. [Layout com CSS - currículo](cv/): estrtura de uma página web com _section_ contendo tabelas para apresentação curricular de um aluno e formulário para contato;
 7. [Resumo das TAGs HTML5](resumo_tags_html5.html): descrever resumidamente todas as tags html5 estudadas no curso.
+8. [Java script](search/): criação de script para localização de conteúdo.
+
+## Modelo estrutural das camadas da Internet (protocolos TCP/IP)
+
+<div align="center">
+  <img width="90%" src="camadas-osi.jpg" alt='modelo OSI'>
+</div>
